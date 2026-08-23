@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="whyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2347"/>
+      <stop offset="100%" stop-color="#0A192F"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="500" rx="16" fill="url(#whyBg)"/>
+  <!-- Quality & Reliability Visual Badge -->
+  <g transform="translate(300, 220)">
+    <circle cx="0" cy="0" r="100" fill="#162C5B" stroke="#FF5E14" stroke-width="4"/>
+    <circle cx="0" cy="0" r="85" fill="#0B1B3D"/>
+    <!-- Checklist and Wrench -->
+    <path d="M-30 0 L-10 20 L35 -25" stroke="#22C55E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="55" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="14" font-weight="800" text-anchor="middle">RELIABLE REPAIRS</text>
+  </g>
+  <rect x="50" y="380" width="500" height="80" rx="12" fill="#162C5B" stroke="rgba(255,255,255,0.15)"/>
+  <text x="300" y="415" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="16" font-weight="700" text-anchor="middle">Quality Craftsmanship Guaranteed</text>
+  <text x="300" y="440" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Professional tools & verified technical solutions across Singapore</text>
+</svg>

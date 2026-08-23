@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <rect width="800" height="500" fill="#1E293B"/>
+  <!-- Cabinet frame -->
+  <rect x="180" y="80" width="440" height="360" rx="4" fill="#334155" stroke="#475569" stroke-width="6"/>
+  <!-- Broken Sagging Left Cabinet Door -->
+  <g transform="rotate(7 200 100)">
+    <rect x="200" y="90" width="195" height="340" rx="4" fill="#9A3412" stroke="#7C2D12" stroke-width="4"/>
+    <rect x="360" y="240" width="14" height="60" rx="4" fill="#475569"/>
+    <!-- Broken hinge -->
+    <circle cx="210" cy="120" r="10" fill="#DC2626"/>
+    <line x1="200" y1="120" x2="225" y2="135" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+  <!-- Right Door -->
+  <rect x="405" y="90" width="200" height="340" rx="4" fill="#7C2D12" stroke="#451A03" stroke-width="4"/>
+  <rect x="425" y="230" width="14" height="60" rx="4" fill="#CBD5E1"/>
+  <!-- Warning badge -->
+  <rect x="240" y="30" width="320" height="46" rx="8" fill="#DC2626" opacity="0.95"/>
+  <text x="400" y="60" fill="#FFFFFF" font-family="'Manrope', sans-serif" font-size="16" font-weight="800" text-anchor="middle">BEFORE: Broken Hinge & Sagging Door</text>
+</svg>
