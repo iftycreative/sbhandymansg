@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1B3D"/>
+      <stop offset="100%" stop-color="#162C5B"/>
+    </linearGradient>
+    <linearGradient id="favAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A30"/>
+      <stop offset="100%" stop-color="#FF5E14"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#favBg)"/>
+  <rect x="1" y="1" width="46" height="46" rx="11" stroke="url(#favAccent)" stroke-width="1.5"/>
+  <!-- Roof -->
+  <path d="M12 21 L24 10 L36 21" stroke="url(#favAccent)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Tools / Lettermark -->
+  <path d="M17 35 V24 H21 C23.5 24 24.5 25.5 24.5 27 C24.5 28.5 23 29.5 21 29.5 H17" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17 29.5 H21.5 C24 29.5 25 31 25 32.5 C25 34.2 23.5 35 21 35 H17" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Wrench Accent -->
+  <path d="M30 24 L35 35" stroke="url(#favAccent)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="34" cy="25" r="3" stroke="url(#favAccent)" stroke-width="2" fill="none"/>
+</svg>
