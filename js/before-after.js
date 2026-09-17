@@ -11,36 +11,36 @@ document.addEventListener('DOMContentLoaded', () => {
 const beforeAfterData = {
   plumbing: {
     title: 'Leaking Pipe & Valve Replacement',
-    beforeImg: 'assets/images/ba-plumbing-before.svg',
-    afterImg: 'assets/images/ba-plumbing-after.svg',
+    beforeImg: 'assets/images/ba-plumbing-before.jpg',
+    afterImg: 'assets/images/ba-plumbing-after.jpg',
     beforeAlt: 'Corroded leaking water pipe before repair',
     afterAlt: 'Clean professional stainless steel plumbing installation after repair'
   },
   painting: {
     title: 'Wall Moisture Stain Repair & Repainting',
-    beforeImg: 'assets/images/ba-painting-before.svg',
-    afterImg: 'assets/images/ba-painting-after.svg',
+    beforeImg: 'assets/images/ba-painting-before.jpg',
+    afterImg: 'assets/images/ba-painting-after.jpg',
     beforeAlt: 'Peeling paint and wall stains before repair',
     afterAlt: 'Fresh smooth immaculate painted interior wall'
   },
   cabinet: {
     title: 'Kitchen Cabinet & Soft-Close Hinge Realignment',
-    beforeImg: 'assets/images/ba-cabinet-before.svg',
-    afterImg: 'assets/images/ba-cabinet-after.svg',
+    beforeImg: 'assets/images/ba-cabinet-before.jpg',
+    afterImg: 'assets/images/ba-cabinet-after.jpg',
     beforeAlt: 'Sagging broken cabinet door with loose hinge',
     afterAlt: 'Perfect aligned soft-close cabinet door hardware'
   },
   waterproofing: {
     title: 'Bathroom Sealant & Waterproof Barrier Restoration',
-    beforeImg: 'assets/images/ba-waterproofing-before.svg',
-    afterImg: 'assets/images/ba-waterproofing-after.svg',
+    beforeImg: 'assets/images/ba-waterproofing-before.jpg',
+    afterImg: 'assets/images/ba-waterproofing-after.jpg',
     beforeAlt: 'Deteriorated silicone sealant with mould seepage',
     afterAlt: 'Waterproof antimicrobial silicone perimeter barrier'
   },
   general: {
     title: 'Door Latch & Hardware Replacement',
-    beforeImg: 'assets/images/ba-general-before.svg',
-    afterImg: 'assets/images/ba-general-after.svg',
+    beforeImg: 'assets/images/ba-general-before.jpg',
+    afterImg: 'assets/images/ba-general-after.jpg',
     beforeAlt: 'Jamming worn door handle mechanism',
     afterAlt: 'Smooth modern stainless lockset and latch'
   }
