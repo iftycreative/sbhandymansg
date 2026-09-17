@@ -1,71 +1,81 @@
 /* ==========================================================================
-   SB HANDYMAN SG - CORE DESIGN SYSTEM & STYLES
+   SB HANDYMAN SG - ANTIGRAVITY DARK THEME & CORE DESIGN SYSTEM
    ========================================================================== */
 
 :root {
-  /* Brand Colors */
-  --color-primary-dark: #0A192F;
-  --color-primary: #0B1B3D;
-  --color-primary-light: #162C5B;
-  --color-primary-muted: #1E3A8A;
+  /* AntiGravity Deep Slate Color Palette */
+  --color-bg-base: #0F172A;
+  --color-bg-primary: #1E1B4B;
+  --color-bg-secondary: #141C3A;
+  --color-bg-tertiary: #1A2447;
+  --color-bg-elevated: #232E5C;
   
-  --color-accent: #FF5E14;
-  --color-accent-hover: #E04800;
-  --color-accent-light: #FFF1EB;
-  --color-accent-glow: rgba(255, 94, 20, 0.25);
+  /* Brand Accents */
+  --color-accent: #FF6B00;
+  --color-accent-hover: #FF7D1A;
+  --color-accent-light: rgba(255, 107, 0, 0.15);
+  --color-accent-glow: rgba(255, 107, 0, 0.35);
   
-  --color-whatsapp: #25D366;
-  --color-whatsapp-hover: #20BA5A;
-  --color-whatsapp-light: #E8F9EE;
+  --color-cyan: #38BDF8;
+  --color-cyan-glow: rgba(56, 189, 248, 0.25);
   
-  --color-white: #FFFFFF;
-  --color-bg-light: #F8FAFC;
-  --color-bg-subtle: #F1F5F9;
-  --color-bg-card: #FFFFFF;
+  --color-whatsapp: #22C55E;
+  --color-whatsapp-hover: #16A34A;
+  --color-whatsapp-light: rgba(34, 197, 94, 0.15);
+  --color-whatsapp-glow: rgba(34, 197, 94, 0.35);
   
-  --color-text-dark: #0F172A;
-  --color-text-body: #334155;
-  --color-text-muted: #64748B;
-  --color-text-light: #94A3B8;
-  --color-text-inverted: #FFFFFF;
+  /* High-Contrast Typography & Surface Colors */
+  --color-text-white: #FFFFFF;
+  --color-text-primary: #F8FAFC;
+  --color-text-body: #E2E8F0;
+  --color-text-muted: #94A3B8;
+  --color-text-dim: #64748B;
   
-  --color-border: #E2E8F0;
-  --color-border-light: #F1F5F9;
-  --color-border-focus: #FF5E14;
+  /* Glassmorphic Surfaces (Deep Slate / Indigo Tint) */
+  --glass-bg: rgba(15, 23, 42, 0.72);
+  --glass-bg-hover: rgba(30, 27, 75, 0.82);
+  --glass-bg-subtle: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(255, 255, 255, 0.22);
+  --glass-border-accent: rgba(255, 107, 0, 0.4);
+  --glass-border-cyan: rgba(56, 189, 248, 0.4);
+  --glass-border-green: rgba(34, 197, 94, 0.4);
   
   /* Typography */
-  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   /* Spacing */
-  --section-padding: 100px 0;
+  --section-padding: 96px 0;
   --section-padding-mobile: 60px 0;
-  --container-width: 1200px;
+  --container-width: 1240px;
   --container-padding: 0 24px;
   
   /* Border Radius */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
   --radius-xl: 24px;
+  --radius-2xl: 32px;
   --radius-full: 9999px;
   
-  /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(10, 25, 47, 0.05);
-  --shadow-sm: 0 2px 8px rgba(10, 25, 47, 0.06);
-  --shadow-md: 0 8px 24px rgba(10, 25, 47, 0.08);
-  --shadow-lg: 0 16px 36px rgba(10, 25, 47, 0.12);
-  --shadow-hover: 0 20px 40px rgba(10, 25, 47, 0.14);
-  --shadow-accent: 0 8px 20px rgba(255, 94, 20, 0.3);
+  /* Shadows & AntiGravity Glows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.45);
+  --shadow-glow-orange: 0 8px 30px rgba(255, 107, 0, 0.3);
+  --shadow-glow-green: 0 8px 30px rgba(34, 197, 94, 0.35);
+  --shadow-glow-cyan: 0 8px 30px rgba(56, 189, 248, 0.3);
+  --shadow-card-hover: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(56, 189, 248, 0.12);
   
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   
   /* Header Height */
   --header-height: 80px;
-  --header-height-scrolled: 70px;
+  --header-height-scrolled: 72px;
 }
 
 /* Reset & Base Setup */
@@ -80,36 +90,72 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg-base);
 }
 
 body {
   font-family: var(--font-body);
   color: var(--color-text-body);
-  background-color: var(--color-white);
-  line-height: 1.6;
+  background: linear-gradient(170deg, #0f172a 0%, #131c3d 55%, #1e1b4b 100%);
+  background-attachment: fixed;
+  line-height: 1.65;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background Ambient Lighting (AntiGravity Atmosphere) */
+body::before {
+  content: '';
+  position: fixed;
+  top: -200px;
+  left: 20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.09) 0%, rgba(15, 23, 42, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 10%;
+  right: -100px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.06) 0%, rgba(30, 27, 75, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Typography Standards */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-text-dark);
+  color: var(--color-text-white);
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
 h1 {
-  font-size: clamp(2.25rem, 4vw + 1rem, 3.5rem);
+  font-size: clamp(2.35rem, 4.5vw + 1rem, 3.75rem);
   font-weight: 800;
 }
 
 h2 {
-  font-size: clamp(1.85rem, 2.5vw + 1rem, 2.6rem);
+  font-size: clamp(1.85rem, 2.8vw + 1rem, 2.75rem);
+  font-weight: 800;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 1.5vw + 0.75rem, 1.5rem);
+  font-size: clamp(1.25rem, 1.6vw + 0.75rem, 1.6rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 p {
@@ -123,7 +169,7 @@ p:last-child {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color var(--transition-fast);
+  transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
 img, svg {
@@ -139,6 +185,11 @@ button, input, select, textarea {
   outline: none;
 }
 
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
 /* Layout Utilities */
 .container {
   max-width: var(--container-width);
@@ -147,39 +198,51 @@ button, input, select, textarea {
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .section {
   padding: var(--section-padding);
   position: relative;
+  z-index: 1;
 }
 
-.section-light {
-  background-color: var(--color-white);
+/* Section Background Variations */
+.section-dark {
+  background: transparent;
 }
 
 .section-subtle {
-  background-color: var(--color-bg-light);
-  border-top: 1px solid var(--color-border-light);
-  border-bottom: 1px solid var(--color-border-light);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.5) 0%, rgba(30, 27, 75, 0.6) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
 }
 
-.section-dark {
-  background-color: var(--color-primary-dark);
-  color: var(--color-white);
+.section-subtle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.04) 0%, transparent 70%);
+  pointer-events: none;
 }
 
-.section-dark h2,
-.section-dark h3,
-.section-dark h4 {
-  color: var(--color-white);
+.section-light {
+  /* Remapped to dark slate elevated gradient for seamless theme integration */
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.35) 0%, rgba(30, 27, 75, 0.55) 100%);
 }
 
 /* Section Header Styles */
 .section-header {
   text-align: center;
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto 56px auto;
+  position: relative;
 }
 
 .section-header.text-left {
@@ -187,40 +250,56 @@ button, input, select, textarea {
   margin-left: 0;
 }
 
+/* Glowing Section Pill Badge */
 .section-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 14px;
-  background-color: var(--color-accent-light);
-  color: var(--color-accent);
+  padding: 7px 18px;
+  background: rgba(255, 107, 0, 0.12);
+  color: #FFA366;
   font-family: var(--font-heading);
   font-size: 0.8125rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   border-radius: var(--radius-full);
-  margin-bottom: 16px;
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.15);
+  margin-bottom: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.section-badge.badge-cyan {
+  background: rgba(56, 189, 248, 0.12);
+  color: #7DD3FC;
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.section-badge.badge-green {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ADE80;
+  border-color: rgba(34, 197, 94, 0.3);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
 }
 
 .section-badge.badge-white {
-  background-color: rgba(255, 255, 255, 0.12);
-  color: #FFA573;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .section-title {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  color: var(--color-text-white);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .section-subtitle {
   font-size: 1.125rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-.section-dark .section-subtitle {
-  color: var(--color-text-light);
+  color: var(--color-text-body);
+  line-height: 1.7;
 }
 
 /* Base Buttons */
@@ -229,87 +308,103 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 26px;
+  padding: 14px 28px;
   border-radius: var(--radius-md);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.975rem;
   cursor: pointer;
   transition: all var(--transition-normal);
   text-align: center;
   line-height: 1;
   white-space: nowrap;
   user-select: none;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Primary Orange Action */
 .btn-primary {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  box-shadow: 0 4px 14px rgba(255, 94, 20, 0.35);
+  background: linear-gradient(135deg, #FF6B00 0%, #FF8533 100%);
+  color: var(--color-text-white);
+  box-shadow: 0 4px 18px rgba(255, 107, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 107, 0, 0.5);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-accent-hover);
+  background: linear-gradient(135deg, #FF7D1A 0%, #FFA05C 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 94, 20, 0.45);
+  box-shadow: 0 8px 26px rgba(255, 107, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
+/* Dynamic WhatsApp Green CTA with Pulsing Glow */
 .btn-whatsapp {
-  background-color: var(--color-whatsapp);
-  color: var(--color-white);
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+  color: var(--color-text-white);
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(34, 197, 94, 0.6);
+  animation: wa-glow-pulse 3s infinite ease-in-out;
 }
 
 .btn-whatsapp:hover {
-  background-color: var(--color-whatsapp-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  background: linear-gradient(135deg, #2ED869 0%, #18B854 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 28px rgba(34, 197, 94, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
+@keyframes wa-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 18px rgba(34, 197, 94, 0.4), 0 0 0 0 rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 26px rgba(34, 197, 94, 0.65), 0 0 0 8px rgba(34, 197, 94, 0);
+  }
+}
+
+/* Call Button */
 .btn-call {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--color-text-white);
   border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-call:hover {
-  background-color: var(--color-primary-light);
+  background: rgba(30, 27, 75, 0.95);
+  border-color: rgba(56, 189, 248, 0.5);
+  color: #7DD3FC;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(11, 27, 61, 0.25);
+  box-shadow: var(--shadow-md), 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
-.btn-outline {
-  background-color: transparent;
-  border: 1.5px solid var(--color-border);
-  color: var(--color-text-dark);
-}
-
-.btn-outline:hover {
-  border-color: var(--color-primary);
-  background-color: var(--color-bg-light);
-  color: var(--color-primary);
-}
-
+/* Glass Outline Button */
+.btn-outline,
 .btn-outline-white {
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1.5px solid rgba(255, 255, 255, 0.25);
-  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-text-white);
+  backdrop-filter: blur(10px);
 }
 
+.btn-outline:hover,
 .btn-outline-white:hover {
-  background-color: rgba(255, 255, 255, 0.18);
-  border-color: var(--color-white);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .btn-sm {
-  padding: 9px 16px;
+  padding: 10px 18px;
   font-size: 0.875rem;
   border-radius: var(--radius-sm);
 }
 
 .btn-lg {
-  padding: 18px 34px;
-  font-size: 1.05rem;
+  padding: 18px 36px;
+  font-size: 1.075rem;
+  letter-spacing: -0.01em;
 }
 
 .btn-icon {
@@ -324,7 +419,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-cyan);
   outline-offset: 3px;
 }
 

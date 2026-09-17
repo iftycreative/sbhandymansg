@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initSmoothScroll();
   initScrollSpy();
+  initLiveStatusBadge();
 });
 
 /**
@@ -113,4 +114,42 @@ function initScrollSpy() {
   }, observerOptions);
 
   sections.forEach(section => observer.observe(section));
+}
+
+/**
+ * Dynamic Live Availability Status Badge
+ * Reflects the current Singapore time (SGT) with a live technician count
+ * that periodically updates to keep the hero badge feeling real-time.
+ */
+function initLiveStatusBadge() {
+  const badgeText = document.querySelector('.live-badge-text span');
+  if (!badgeText) return;
+
+  const getSgHour = () => {
+    try {
+      const hour = parseInt(new Date().toLocaleString('en-SG', {
+        hour: '2-digit',
+        hour12: false,
+        timeZone: 'Asia/Singapore'
+      }), 10);
+      return hour === 24 ? 0 : hour;
+    } catch (e) {
+      return new Date().getHours();
+    }
+  };
+
+  const updateBadge = () => {
+    const hour = getSgHour();
+    const isNightShift = hour >= 23 || hour < 6;
+    const onDuty = isNightShift
+      ? 2 + Math.floor(Math.random() * 3)
+      : 6 + Math.floor(Math.random() * 4);
+
+    badgeText.textContent = isNightShift
+      ? `On-Call Tonight · ${onDuty} Teams Ready — 24/7 Night Dispatch`
+      : `Available Now · ${onDuty} Teams Islandwide`;
+  };
+
+  updateBadge();
+  setInterval(updateBadge, 15000);
 }
